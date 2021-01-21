@@ -1,0 +1,87 @@
+.hostJoin{
+}
+
+.hostJoin-center{
+    background: #d9d9d9;
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+.hostJoin .register-form{
+    padding: 5%;
+    margin-top: 5%;
+}
+.btnJoin{
+    float: right;
+    margin-top: 5%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #cc2d29;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+
+.naCentru{
+     margin-left: 25px;
+}
+.levoNeki{
+    margin-left: 45px;
+    margin-bottom: 10%;
+}
+.btnHost{
+    margin-left: 65px;
+    margin-top: 10%;
+    margin-bottom:10%;
+}
+
+.hostJoin .nav-tabs{
+    margin-top: 3%;
+    border: none;
+    background: #cc2d29;
+    border-radius: 1.5rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hostJoin .nav-tabs .nav-link{
+    padding: 2%;
+    height: 34px;
+    font-weight: 600;
+    color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.hostJoin .nav-tabs .nav-link:hover{
+    border: none;
+}
+.hostJoin .nav-tabs .nav-link.active{
+    width: 80px;
+    color: #000;
+    border: 2px solid #000;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+.hostJoin-heading{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: -15%;
+    color: #495057;
+}
+
+.disabled {
+        cursor: not-allowed;
+
+        a {
+            pointer-events: none;
+        }
+    }

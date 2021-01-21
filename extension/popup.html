@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html style="min-width:300px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./libs/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="./libs/cssFile.css" rel="stylesheet">
+
+    <script src="./libs/jquery.min.js"></script>
+    <script src="./libs/bootstrap.min.js"></script>
+      
+    
+     
+  </head>
+  <body>
+ 
+
+    <div class="container hostJoin">
+      <div class="row">
+        <div class="col-md-9 hostJoin-center">
+            <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Host</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Join</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div id="buttonAndInfo" class="row register-form" style="display:none">
+                        <div class="col-md-6 levoNeki">
+                          <h1><span id="room_number" class="badge badge-success ">123451</span></h1>
+                        </div>
+                        <div class="col-md-6 naCentru">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                              <button id="start" type="button" class="btn btn-secondary">Start</button>
+                              <button id="stop" type="button" class="btn btn-secondary">Stop</button>
+                              <button id="sync" type="button" class="btn btn-secondary">Sync</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                          
+                          <button id="stHost" class="btnHost btn btn-secondary btn-lg">Start hosting</button>
+                          <button id="discbutton" class="btnHost btn btn-secondary btn-lg" style="display:none">Stop hosting</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="row register-form">
+                        <div id="joinInput" class="col-md-6">
+                            <div class="form-group">
+                                <input id="roomCode" type="text" class="form-control" placeholder="Room code" value="" />
+                                <div id="invalidNumber" class="invalid-feedback">
+                                  Please enter a valid room number!
+                                </div>
+                            </div>
+                        </div>
+                        <div id="joinedRoomNumber" class="col-md-6" style="display:none">
+                            <h1>Connected to room:<span id="gotNumber" class="badge badge-success ">123451</span></h1>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="checkboxJoin" class="form-check">
+                              <input id="joinRedirectCheck" class="form-check-input" type="checkbox" value="test">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Redirect tab
+                              </label>
+                            </div>
+                            <button id="JoinButton" class="btnJoin" >Join</button>
+                            <button id="disconnectUser" class="btnJoin" style="display:none">Disconnect</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  
+
+    <script src="popup.js"></script>
+
+
+
+  </body>
+</html>
